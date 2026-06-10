@@ -1,0 +1,9 @@
+services:
+  zgroup-genset:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: zgroup-genset
+    ports:
+      - "3550:3550"
+    restart: unless-stopped
